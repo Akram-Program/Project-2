@@ -1,13 +1,6 @@
 // Main content Homepagina//
 let main = document.getElementById("content");
 
-document.getElementById("link-Rekeningen").addEventListener("click",() => {
-    main.innerHTML = `
-        <h1>Rekeningen</h1>
-        <p>Hier zijn uw rekeningen.</p>
-    `;
-});
-
 document.getElementById("link-Overschrijvingen").addEventListener("click", () => {
     main.innerHTML = `
         <h1>Overschrijvingen</h1>
@@ -44,3 +37,18 @@ function Login() {
         alert("Onjuiste gebruikersnaam of wachtwoord. Probeer het opnieuw.");
     }
 }
+
+// Nieuwe Rekening Functie//
+let knop = document.getElementById('nieuweRekening');
+let lijst = document.getElementById('rekening-lijst');
+
+knop.addEventListener('click', () => {
+    let naam = prompt('Voer een naam in voor de nieuwe rekening:');
+    if (!naam) return;
+
+    let nieuweDiv = document.createElement('div');
+    nieuweDiv.className = 'rekening';
+    nieuweDiv.innerHTML = `<span>${naam}</span><span>€100.00</span>`;
+
+    lijst.appendChild(nieuweDiv);
+});
