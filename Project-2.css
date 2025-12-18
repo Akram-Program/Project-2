@@ -144,3 +144,14 @@ header {
 .knop:hover {
 background: #003a7a;
 }
+
+/* Overschrijvingen Pagina */
+.Rekening-Overschrijven {
+    background: #e9eef5;
+    padding: 14px 18px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
