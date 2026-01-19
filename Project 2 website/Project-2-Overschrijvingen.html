@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Project-2.css">
+    <title>Geld Overzetten</title>
+</head>
+<body>
+    <header>
+        <a href="Project-2-Homepagina.html"><img src="images/Logo-naam.png" alt="Logo" class="logo"></a>
+        <a href="Project-2-Index.html" class="logout-btn">Uitloggen</a>
+    </header>
+
+    <div class="Layout">
+        <div class="sidebar">
+            <a href="Project-2-Rekeningen.html" id="link-Rekeningen">Rekeningen</a>
+            <a href="Project-2-Overschrijvingen.html" id="link-Overschrijvingen">Geld Overzetten</a>
+            <a href="Project-2-TransactieGS.html" id="link-TransactieGS">Transactiegeschiedenis</a>
+            <a href="Project-2-Beleggen.html" id="link-Beleggen">Beleggen</a>
+            <a href="#" id="link-Contact">Contact</a>
+            <a href="#" id="link-Instellingen">Instellingen</a>
+        </div>
+
+        <main id="content">
+            <div class="dashboard">
+                <h1>Geld Overzetten</h1>
+                <label for="Rekeningen">Van Rekening:</label>
+                <select name="Rekeningen" id="VanRekeningen" class="Rekening-Overschrijven">
+                    <option value="Reguliere">Reguliere Rekening (€500)</option>
+                    <option value="Spaar">Spaarrekening (€500)</option>
+                </select>
+
+                <label for="Rekeningen">Naar Rekening:</label>
+                <select name="Rekeningen" id="NaarRekening" class="Rekening-Overschrijven">
+                    <option value="Reguliere">Reguliere Rekening (€500)</option>
+                    <option value="Spaar">Spaarrekening (€500)</option>
+                </select>
+
+                <label for="Bedrag">Bedrag:</label>
+                <input type="number" id="Bedrag" name="bedrag" class="Rekening-Overschrijven" min="0" placeholder="Voer hier een bedrag in">
+                <button class="knop" id="knop-Overschrijven">Overzetten</button>
+            </div>
+        </main>
+    </div>
+    
+    <script src="Project-2-Overschrijvingen.js"></script>
+</body>
+</html>
