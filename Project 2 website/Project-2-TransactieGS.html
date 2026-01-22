@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transactiegeschiedenis</title>
+    <link rel="stylesheet" href="Project-2.css">
+</head>
+<body>
+    <header>
+        <a href="Project-2-Homepagina.html"><img src="images/Logo-naam.png" alt="Logo" class="logo"></a>
+        <a href="Project-2-Index.html" class="logout-btn">Uitloggen</a>
+    </header>
+
+    <div class="Layout">
+        <div class="sidebar">
+            <a href="Project-2-Rekeningen.html" id="link-Rekeningen">Rekeningen</a>
+            <a href="Project-2-Overschrijvingen.html" id="link-Overschrijvingen">Geld Overzetten</a>
+            <a href="Project-2-TransactieGS.html" id="link-TransactieGS">Transactiegeschiedenis</a>
+            <a href="Project-2-Beleggen.html" id="link-Beleggen">Beleggen</a>
+            <a href="Project-2-Crypto.html" id="link-Crypto">Crypto Investeren</a>
+        </div>
+
+        <main id="content">
+            <div class="containerGS">
+                <h1>Transactiegeschiedenis</h1>
+
+                <div class="filter-sectieGS">
+                    <div class="filter-groepGS">
+                        <label for="filterTypeGS">Filter op type:</label>
+                        <select id="filterTypeGS">
+                            <option value="alle">Alle</option>
+                            <option value="inkomend">Inkomend</option>
+                            <option value="uitgaand">Uitgaand</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-groepGS">
+                        <label for="filterDatumGS">Filter op datum:</label>
+                        <input type="date" id="filterDatumGS">
+                    </div>
+
+                    <button id="btnFilterGS">Filteren</button>
+                </div>
+
+            <div id="transactielijstGS" class="transactie-lijstGS"></div>
+            </div>
+        </main>
+    </div>  
+
+    <script src="Project-2-TransactieGS.js"></script>
+</body>
+</html>
