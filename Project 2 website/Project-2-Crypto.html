@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Project-2.css">
+    <title>Crypto Investeren</title>
+</head>
+<body>
+    <header>
+        <a href="Project-2-Homepagina.html"><img src="images/Logo-naam.png" alt="Logo" class="logo"></a>
+        <a href="Project-2-Index.html" class="logout-btn">Uitloggen</a>
+    </header>
+
+    <div class="Layout">
+        <div class="sidebar">
+            <a href="Project-2-Rekeningen.html" id="link-Rekeningen">Rekeningen</a>
+            <a href="Project-2-Overschrijvingen.html" id="link-Overschrijvingen">Geld Overzetten</a>
+            <a href="Project-2-TransactieGS.html" id="link-TransactieGS">Transactiegeschiedenis</a>
+            <a href="Project-2-Beleggen.html" id="link-Beleggen">Beleggen</a>
+            <a href="Project-2-Crypto.html" id="link-Crypto">Crypto Investeren</a>
+        </div>
+
+        <main id="content">
+            <div class="dashboard">
+                <h1>Crypto Investeren</h1>
+
+                <div class="rekening">Bitcoin: €80000 per eenheid</div>
+                <div class="rekening">Ether: €2700 per eenheid</div>
+                <div class="rekening">Litecoin: €60 per eenheid</div>
+
+                <p>Beschikbaar saldo: <strong id="Saldo">€1000,00</strong></p>
+                <label for="Crypto">Kies een crypto:</label> <br>
+                <select name="Crypto" id="Crypto">
+                    <option value="Bitcoin">Bitcoin (BTC)</option>
+                    <option value="Ether">Ether (ETH)</option>
+                    <option value="Litecoin">Litecoin (LTC)</option>
+                </select> <br> <br>
+
+                <label for="Aantal">Aantal:</label> <br>
+                <input type="number" id="Aantal" name="Aantal" min="0.0001" step="0.0001"><br><br>
+
+                <p>Totaal bedrag: <strong id="totaalBedrag">€0,00</strong></p><br>
+
+                <button class="knop" id="kopenBtn">Kopen</button>
+                <button class="knop" id="verkopenBtn">Verkopen</button>
+            </div>
+        </main>
+    </div>
+    
+    <script src="Project-2-Crypto.js"></script>
+</body>
+</html>

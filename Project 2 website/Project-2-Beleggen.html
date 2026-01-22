@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Project-2.css">
+    <title>Beleggen</title>
+</head>
+<body>
+    <header>
+        <a href="Project-2-Homepagina.html"><img src="images/Logo-naam.png" alt="Logo" class="logo"></a>
+        <a href="Project-2-Index.html" class="logout-btn">Uitloggen</a>
+    </header>
+
+    <div class="Layout">
+        <div class="sidebar">
+            <a href="Project-2-Rekeningen.html" id="link-Rekeningen">Rekeningen</a>
+            <a href="Project-2-Overschrijvingen.html" id="link-Overschrijvingen">Geld Overzetten</a>
+            <a href="Project-2-TransactieGS.html" id="link-TransactieGS">Transactiegeschiedenis</a>
+            <a href="Project-2-Beleggen.html" id="link-Beleggen">Beleggen</a>
+            <a href="Project-2-Crypto.html" id="link-Crypto">Crypto Investeren</a>
+        </div>
+
+        <main id="content">
+            <div class="dashboard">
+                <h1>Beleggen</h1>
+                <p>Beschikbaar saldo: €1000</p>
+                <label for="Categorie">Kies een categorie:</label> <br>
+                <select name="Categorie" id="Categorie">
+                    <option value="Aandelen">Aandelen</option>
+                    <option value="Obligaties">Obligaties</option>
+                    <option value="ETFs">ETFs</option>
+                    <option value="Crypto">Crypto</option>
+                </select> <br> <br>
+
+                <label for="Product">Kies een product:</label> <br>
+                <select name="Product" id="Product">
+                    <option value="ING" data-categorie="Aandelen">ING</option>
+                    <option value="Rabobank" data-categorie="Aandelen">Rabobank</option>
+                    <option value="ABN AMRO" data-categorie="Aandelen">ABN AMRO</option>
+                    <option value="DEGIRO" data-categorie="Obligaties">DEGIRO</option>
+                    <option value="BUX" data-categorie="Obligaties">BUX</option>
+                    <option value="Lynx" data-categorie="ETFs">Lynx</option>
+                    <option value="Bitcoin" data-categorie="Crypto">Bitcoin (BTC)</option>
+                    <option value="Ether" data-categorie="Crypto">Ether (ETH)</option>
+                    <option value="Litecoin" data-categorie="Crypto">Litecoin (LTC)</option>
+                </select>
+                <br><br>
+                <button type="button" id="Knop-Beleggen">Beleggen</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="Project-2-Beleggen.js"></script>
+</body>
+</html>
